@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age of Empires II: HD Edition - Uygarlıklar Rehberi</title>
+    
+    <!-- Google Fonts: Tarihi & Zarif Fontlar -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Playfair+Display:wght@700;900&family=Lora:wght@400;500;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ============================================
+         HEADER - BAŞLIK BÖLÜMÜ
+         ============================================ -->
+    <header class="header">
+        <div class="header-content">
+            <h1 class="header-title">Age of Empires II: HD Edition</h1>
+            <p class="header-subtitle">Uygarlıklar Rehberi</p>
+        </div>
+    </header>
+
+    <!-- ============================================
+         MAIN CONTAINER - ANA KONTEYNER
+         ============================================ -->
+    <main class="container">
+        <!-- Navigation: Medeniyetler Seçimi -->
+        <nav class="civilizations-nav">
+            <div class="nav-wrapper">
+                <button class="civ-btn active" data-civ="turks">
+                    <span class="civ-icon">🇹🇷</span>
+                    <span class="civ-name">Türkler</span>
+                </button>
+                <button class="civ-btn" data-civ="britons">
+                    <span class="civ-icon">🇬🇧</span>
+                    <span class="civ-name">İngilizler</span>
+                </button>
+                <button class="civ-btn" data-civ="mayans">
+                    <span class="civ-icon">🇲🇽</span>
+                    <span class="civ-name">Mayalar</span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Content: Medeniyetin Detayları -->
+        <section class="content-wrapper">
+            <!-- TÜRKLER -->
+            <div class="civilization-card active" data-civ="turks">
+                <div class="civ-header">
+                    <div class="civ-header-top">
+                        <h2 class="civ-title">Türkler</h2>
+                        <div class="civ-emblem">🔫</div>
+                    </div>
+                    <p class="civ-focus">Odak: Barut Birlikleri Uzmanı</p>
+                </div>
+
+                <div class="civ-content">
+                    <!-- Artılar / Bonuslar -->
+                    <section class="section-box">
+                        <h3 class="section-title">✨ Medeniyet Bonusları</h3>
+                        <ul class="bonus-list">
+                            <li class="bonus-item">
+                                <span class="bonus-icon">✓</span>
+                                <span class="bonus-text"><strong>Janissaries</strong> (Unique Unit) harita üzerinde 25% daha güçlü</span>
+                            </li>
+                            <li class="bonus-item">
+                                <span class="bonus-icon">✓</span>
+                                <span class="bonus-text"><strong>Bombard Cannons</strong> ve <strong>Bombard Towers</strong> 30% daha ucuz üretim</span>
+                            </li>
+                            <li class="bonus-item">
+                                <span class="bonus-icon">✓</span>
+                                <span class="bonus-text"><strong>Hand Cannoneers</strong> normal birim satın alma maliyeti 20% daha düşük</span>
+                            </li>
+                            <li class="bonus-item">
+                                <span class="bonus-icon">✓</span>
+                                <span class="bonus-text">Shire <strong>Barut Çağına</strong> geçiş 25% daha hızlı</span>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <!-- Eksiler / Zayıflıklar -->
+                    <section class="section-box">
+                        <h3 class="section-title">⚠️ Zayıf Yönler</h3>
+                        <ul class="weakness-list">
+                            <li class="weakness-item">
+                                <span class="weakness-icon">✗</span>
+                                <span class="weakness-text"><strong>Şövalyeler</strong> ve <strong>Paladins</strong> birim ağacında yok — ağır kav subası sınırlı</span>
+                            </li>
+                            <li class="weakness-item">
+                                <span class="weakness-icon">✗</span>
+                                <span class="weakness-text"><strong>Okçuluk</strong> teknolojileri zayıf — Uzun Yay birlikleri yoktur</span>
+                            </li>
+                            <li class="weakness-item">
+                                <span class="weakness-icon">✗</span>
+                                <span class="weakness-text">Oku <strong>İpek Yolu</strong> üzerinde hızlı ekonomi bonusu yok</span>
+                            </li>
+                            <li class="weakness-item">
+                                <span class="weakness-icon">✗</span>
+                                <span class="weakness-text"><strong>Kavaleri gelişimi</strong> eksik — savaş filolarında sınırlamalar</span>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <!-- Unique Unit -->
+                    <section class="section-box featured">
+                        <h3 class="section-title">⚔️ Özel Birim: Janissary</h3>
+                        <div class="unique-unit">
+                            <p class="unique-desc">
+                                <strong>Janissary</strong> Türklerin şöhretli savaş makinesidir. El atışmanlı daha geliştirilmiş bir versiyonu olarak düşün — uzun menzilli, yüksek hasarı ve ateş direnci vardır.
+                            </p>
+                            <div class="unit-stats">
+                                <div class="stat">
+                                    <span class="stat-label">Hasar:</span>
+                                    <span class="stat-value">11</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-label">Zırh:</span>
+                                    <span class="stat-value">1</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-label">Ateş Direnci:</span>
+                                    <span class="stat-value">+3</span>
+                                </div>
+                            </div>
+                            <p class="unit-role"><em>Rol: Uzun-menzilli barut savaşçısı, siperler yakında ve kalabalık grupla etkili.</em></p>
+                        </div>
+                    </section>
+
+                    <!-- Unique Technology -->
+                    <section class="section-box">
+                        <h3 class="section-title">🔬 Özel Teknoloji</h3>
+                        <div class="tech-item">
+                            <h4 class="tech-name">Sipahi</h4>
+                            <p class="tech-desc">
+                                Türk binilerin zırhlı savunmasını geliştiren bir teknoloji. <strong>Kavaleri Şubesi</strong> tüm birimleri +1 Zırh ve +1 Ateş Direnci kazanır.
+                            </p>
+                            <p class="tech-cost"><strong>Maliyeti:</strong> 500 Ahşap, 300 Altın</p>
+                        </div>
+                    </section>
+
+                    <!-- Team Bonus -->
+                    <section class="section-box">
+                        <h3 class="section-title">🤝 Takım Bonusu</h3>
+                        <div class="team-bonus">
+                            <p class="team-bonus-text">
+                                Türk müttefiklerine <strong>Barut Birlikleri</strong> (Hand Cannoneers, Bombard Cannons, vb.) için <strong>%15 İndirim</strong> sağlanır.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- İNGİLİZLER -->
+            <div class="civilization-card" data-civ="britons">
+                <div class="civ-header">
+                    <div class="civ-header-top">
+                        <h2 class="civ-title">İngilizler</h2>
+                        <div class="civ-emblem">🏹</div>
+                    </div>
+                    <p class="civ-focus">Odak: Okçuluk Mastery</p>
+                </div>
+
+                <div class="civ-content">
+                    <!-- Artılar / Bonuslar -->
+                    <section class="section-box">
+                        <h3 class="section-title">✨ Medeniyet Bonusları</h3>
+                        <ul class="bonus-list">
+                            <li class="bonus-item">
+                                <span class="bonus-icon">✓</span>
+                                <span class="bonus-text">Tüm <strong>Okçular</strong> +1 Zırh Direnci kazanır (her çağ seviyesinde)</span>
+                            </li>
+                            <li class="bonus-item">
+                                <span class="bonus-icon">✓</span>
+                                <span class="bonus-text"><strong>Okçu Şubesi</strong> teknolojileri 25% ucuz</span>
+                            </li>
+                            <li class="bonus-item">
+                                <span class="bonus-icon">✓</span>
+                                <span class="bonus-text"><strong>Castle</strong> binaları ve <strong>Tower</strong>'lar inşaası 25% daha hızlı</span>
+                            </li>
+                            <li class="bonus-item">
+                                <span class="bonus-icon">✓</span>
+                                <span class="bonus-text"><strong>İmparatorluk Çağına</strong> geçişi araştırmak daha ucuz (100 Altın tasarruf)</span>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <!-- Eksiler / Zayıflıklar -->
+                    <section class="section-box">
+                        <h3 class="section-title">⚠️ Zayıf Yönler</h3>
+                        <ul class="weakness-list">
+                            <li class="weakness-item">
+                                <span class="weakness-icon">✗</span>
+                                <span class="weakness-text"><strong>Şövalye</strong> birim ağacı eksik — ağır kav altsubası olmayan</span>
+                            </li>
+                            <li class="weakness-item">
+                                <span class="weakness-icon">✗</span>
+                                <span class="weakness-text"><strong>Barut birlikleri</strong> (Hand Cannoneers, Bombards) kuvvetli değil</span>
+                            </li>
+                            <li class="weakness-item">
+                                <span class="weakness-icon">✗</span>
+                                <span class="weakness-text"><strong>Halı Askeri</strong> (Infantry) teknolojileri zayıf — bıyık askerleri güçsüz</span>
+                            </li>
+                            <li class="weakness-item">
+                                <span class="weakness-icon">✗</span>
+                                <span class="weakness-text"><strong>Kuşatma Makineleri</strong> (Trebuchet) geliştirmeleri sınırlı</span>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <!-- Unique Unit -->
+                    <section class="section-box featured">
+                        <h3 class="section-title">⚔️ Özel Birim: Longbowman</h3>
+                        <div class="unique-unit">
+                            <p class="unique-desc">
+                                <strong>Longbowman</strong> İngilizlerin efsanevi oku ustasıdır. Usta okçu yay ile yapılan oklar çok daha güçlü, seçmek mesafeli ve hızlı atışlı.
+                            </p>
+                            <div class="unit-stats">
+                                <div class="stat">
+                                    <span class="stat-label">Hasar:</span>
+                                    <span class="stat-value">7</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-label">Menzil:</span>
+                                    <span class="stat-value">7</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-label">Atış Hızı:</span>
+                                    <span class="stat-value">2.0</span>
+                                </div>
+                            </div>
+                            <p class="unit-role"><em>Rol: Süper-güçlü uzak menzil savunması, kalabalık piyadeler ve hafif kavaleriye karşı etkili.</em></p>
+                        </div>
+                    </section>
+
+                    <!-- Unique Technology -->
+                    <section class="section-box">
+                        <h3 class="section-title">🔬 Özel Teknoloji</h3>
+                        <div class="tech-item">
+                            <h4 class="tech-name">Yeomen</h4>
+                            <p class="tech-desc">
+                                Kulesi koruyucusu ve İngiliz okçularını güçlendiren antik bir sanat. <strong>Tower</strong>'lar +2 Zırh Direnci alır ve <strong>Castle</strong> daha sağlam olur.
+                            </p>
+                            <p class="tech-cost"><strong>Maliyeti:</strong> 800 Ahşap, 600 Altın</p>
+                        </div>
+                    </section>
+
+                    <!-- Team Bonus -->
+                    <section class="section-box">
+                        <h3 class="section-title">🤝 Takım Bonusu</h3>
+                        <div class="team-bonus">
+                            <p class="team-bonus-text">
+                                İngiliz müttefiklerine <strong>Okçular</strong> %20 daha <strong>hızlı atış</strong> sağlanır (Rate of Fire artar).
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- MAYALAR -->
+            <div class="civilization-card" data-civ="mayans">
+                <div class="civ-header">
+                    <div class="civ-header-top">
+                        <h2 class="civ-title">Mayalar</h2>
+                        <div class="civ-emblem">🏺</div>
+                    </div>
+                    <p class="civ-focus">Odak: Ekonomi & Mezo Birlikleri</p>
+                </div>
+
+                <div class="civ-content">
+                    <!-- Artılar / Bonuslar -->
+                    <section class="section-box">
+                        <h3 class="section-title">✨ Medeniyet Bonusları</h3>
+                        <ul class="bonus-list">
+                            <li class="bonus-item">
+                                <span class="bonus-icon">✓</span>
+                                <span class="bonus-text"><strong>Köylü İşçiler</strong> 15% daha ucuz üretim maliyeti</span>
+                            </li>
+                            <li class="bonus-item">
+                                <span class="bonus-icon">✓</span>
+                                <span class="bonus-text">Tüm <strong>Mezo Birlikleri</strong> (Plumed Archer, Eagle Scout vs.) %10 daha az maliyetli</span>
+                            </li>
+                            <li class="bonus-item">
+                                <span class="bonus-icon">✓</span>
+                                <span class="bonus-text">Tüm <strong>Çağ Geçişleri</strong> 15% daha hızlı ve daha ucuz</span>
+                            </li>
+                            <li class="bonus-item">
+                                <span class="bonus-icon">✓</span>
+                                <span class="bonus-text"><strong>Plumed Archer</strong>'lar Sarıçoğan atışmanlı gücü ile güçlendirilen</span>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <!-- Eksiler / Zayıflıklar -->
+                    <section class="section-box">
+                        <h3 class="section-title">⚠️ Zayıf Yönler</h3>
+                        <ul class="weakness-list">
+                            <li class="weakness-item">
+                                <span class="weakness-icon">✗</span>
+                                <span class="weakness-text"><strong>Kavaleri</strong> birim ağacı sınırlı — Şövalyeler ve Paladins yok</span>
+                            </li>
+                            <li class="weakness-item">
+                                <span class="weakness-icon">✗</span>
+                                <span class="weakness-text"><strong>Barut Çağı Birlikleri</strong> (Hand Cannoneers, Bombards) zayıf</span>
+                            </li>
+                            <li class="weakness-item">
+                                <span class="weakness-icon">✗</span>
+                                <span class="weakness-text"><strong>Kuşatma Teknolojileri</strong> (Trebuchet, Bombard) gelişimi sınırlı</span>
+                            </li>
+                            <li class="weakness-item">
+                                <span class="weakness-icon">✗</span>
+                                <span class="weakness-text"><strong>İleri Askeri Teknolojileri</strong> (Champion, Paladin) mevcut değil</span>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <!-- Unique Unit -->
+                    <section class="section-box featured">
+                        <h3 class="section-title">⚔️ Özel Birim: Plumed Archer</h3>
+                        <div class="unique-unit">
+                            <p class="unique-desc">
+                                <strong>Plumed Archer</strong> Mayan okçusunun en yüksek seviyesidir. Tüylenmiş miğferi ve geliştirilen okları onu Mezo savaşçıların en etkili oku yapan benzersiz bir birim.
+                            </p>
+                            <div class="unit-stats">
+                                <div class="stat">
+                                    <span class="stat-label">Hasar:</span>
+                                    <span class="stat-value">5</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-label">Menzil:</span>
+                                    <span class="stat-value">6</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-label">Hız:</span>
+                                    <span class="stat-value">Yüksek</span>
+                                </div>
+                            </div>
+                            <p class="unit-role"><em>Rol: Hafif okçu, ekonomik ve hızlı, dışarıda saldırılar ve savunma açısından çok verimli.</em></p>
+                        </div>
+                    </section>
+
+                    <!-- Unique Technology -->
+                    <section class="section-box">
+                        <h3 class="section-title">🔬 Özel Teknoloji</h3>
+                        <div class="tech-item">
+                            <h4 class="tech-name">Obsidian Arrows</h4>
+                            <p class="tech-desc">
+                                Eski Mayan obsidyen oklarının geliştirilmesi. Tüm <strong>Mezo Okçu Birlikleri</strong> +2 Pierce Armor kazanır ve okları daha penetratif hale gelir.
+                            </p>
+                            <p class="tech-cost"><strong>Maliyeti:</strong> 600 Ahşap, 400 Altın</p>
+                        </div>
+                    </section>
+
+                    <!-- Team Bonus -->
+                    <section class="section-box">
+                        <h3 class="section-title">🤝 Takım Bonusu</h3>
+                        <div class="team-bonus">
+                            <p class="team-bonus-text">
+                                Mayan müttefiklerine <strong>Köylü İşçiler</strong> %10 daha ucuz üretim maliyeti sağlanır — ekonomiye destek.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer: Bilgi ve Talimatlar -->
+        <footer class="footer">
+            <p class="footer-text">
+                <em>Age of Empires II: HD Edition Uygarlıklar Rehberi</em> — Tamamen statik HTML/CSS/JavaScript ile yapılmıştır.
+            </p>
+            <p class="footer-instruction">
+                💡 <strong>Not:</strong> Daha fazla medeniyeti eklemek için, mevcut ırk kartlarını kopyalayıp <code>data-civ</code> ve <code>class</code> değerlerini güncelle.
+            </p>
+            <p class="footer-credit">
+                <small>✨ Designed & Developed | Portfolio Project</small>
+            </p>
+        </footer>
+    </main>
+
+    <!-- JavaScript: İnteraktivite -->
+    <script src="script.js"></script>
+</body>
+</html>

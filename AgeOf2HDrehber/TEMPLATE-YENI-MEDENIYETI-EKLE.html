@@ -1,0 +1,203 @@
+<!-- =====================================================
+     YENI MEDENİYET EKLE - TEMPLATE
+     =====================================================
+     
+     Bu dosya, yeni bir medeniyeti HTML'e nasıl ekleyeceğini
+     adım adım göstermektedir.
+     
+     KULLANIM:
+     1. Aşağıdaki kodu kopyala
+     2. index.html dosyasını aç
+     3. Bölüm 5 (.civilization-card)'dan sonra yapıştır
+     4. Değişkenleri kendi verilerin ile değiştir
+     5. Tuşları (script.js) güncelle
+     ===================================================== -->
+
+<!-- ★ TEMPLATE: YENI MEDENİYET KARTASI ★ -->
+<div class="civilization-card" data-civ="example">
+    <!-- BAŞLIK BÖLÜMÜ -->
+    <div class="civ-header">
+        <div class="civ-header-top">
+            <h2 class="civ-title">MEDENİYET ADI</h2>
+            <div class="civ-emblem">🏺</div> <!-- EMOJI İKONU DEĞIŞTIR -->
+        </div>
+        <p class="civ-focus">Odak: Medeniyetin Ana Odağı Yaz</p>
+    </div>
+
+    <!-- İÇERİK BÖLÜMÜ -->
+    <div class="civ-content">
+        
+        <!-- 1. MEDENIYET BONUSLARI -->
+        <section class="section-box">
+            <h3 class="section-title">✨ Medeniyet Bonusları</h3>
+            <ul class="bonus-list">
+                <li class="bonus-item">
+                    <span class="bonus-icon">✓</span>
+                    <span class="bonus-text"><strong>Birim Adı</strong> veya <strong>Teknoloji</strong> %bonus mikyası</span>
+                </li>
+                <li class="bonus-item">
+                    <span class="bonus-icon">✓</span>
+                    <span class="bonus-text"><strong>İkinci Bonus</strong> detayı burada</span>
+                </li>
+                <li class="bonus-item">
+                    <span class="bonus-icon">✓</span>
+                    <span class="bonus-text"><strong>Üçüncü Bonus</strong> — yeterli sayıda bonus ekle</span>
+                </li>
+                <li class="bonus-item">
+                    <span class="bonus-icon">✓</span>
+                    <span class="bonus-text"><strong>Dördüncü Bonus</strong> — genellikle 3-4 bonus yeterli</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- 2. ZAYIF YÖNLER (ZAYıFLıKLAR) -->
+        <section class="section-box">
+            <h3 class="section-title">⚠️ Zayıf Yönler</h3>
+            <ul class="weakness-list">
+                <li class="weakness-item">
+                    <span class="weakness-icon">✗</span>
+                    <span class="weakness-text"><strong>Eksik Birim</strong> veya <strong>Teknoloji</strong> — kısa açıklama</span>
+                </li>
+                <li class="weakness-item">
+                    <span class="weakness-icon">✗</span>
+                    <span class="weakness-text"><strong>İkinci Zayıflık</strong> — neden sınırlandırıldığını yaz</span>
+                </li>
+                <li class="weakness-item">
+                    <span class="weakness-icon">✗</span>
+                    <span class="weakness-text"><strong>Üçüncü Zayıflık</strong> — bu medeniyetin kısıtlıklarını göster</span>
+                </li>
+                <li class="weakness-item">
+                    <span class="weakness-icon">✗</span>
+                    <span class="weakness-text"><strong>Dördüncü Zayıflık</strong> — stratejik eksiklikler</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- 3. ÖZEL BİRİM (FEATURED SECTION) -->
+        <section class="section-box featured">
+            <h3 class="section-title">⚔️ Özel Birim: BİRİM ADI</h3>
+            <div class="unique-unit">
+                <!-- BİRİM AÇIKLAMASI -->
+                <p class="unique-desc">
+                    <strong>BİRİM ADI</strong> bu medeniyetin efsanevi savaş makinesir.
+                    Kısaca bu birim hakkında 2-3 cümle yaz. Neden özel olduğunu, 
+                    ne yapmaya yaradığını, hangi durumlarda etkili olduğunu açıkla.
+                </p>
+                
+                <!-- BİRİM İSTATİSTİKLERİ -->
+                <div class="unit-stats">
+                    <div class="stat">
+                        <span class="stat-label">Hasar:</span>
+                        <span class="stat-value">XX</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Zırh:</span>
+                        <span class="stat-value">X</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Hız:</span>
+                        <span class="stat-value">X.X</span>
+                    </div>
+                    <!-- Daha Fazla İstatistik İstersen Ekle -->
+                </div>
+                
+                <!-- BİRİM RÖLÜ -->
+                <p class="unit-role">
+                    <em>Rol: Burada bu biriminin strateji açısından rolünü açıkla.</em>
+                </p>
+            </div>
+        </section>
+
+        <!-- 4. ÖZEL TEKNOLOJİ -->
+        <section class="section-box">
+            <h3 class="section-title">🔬 Özel Teknoloji</h3>
+            <div class="tech-item">
+                <!-- TEKNOLOJİ ADI -->
+                <h4 class="tech-name">TEKNOLOJİ ADI</h4>
+                
+                <!-- TEKNOLOJİ AÇIKLAMASI -->
+                <p class="tech-desc">
+                    Teknoloji hakkında kısa açıklama. Hangi birlikleri güçlendirdiğini,
+                    ne gibi avantajlar sağladığını anlatır. 2-3 cümle yeterli.
+                </p>
+                
+                <!-- TEKNOLOJİ MALİYETİ -->
+                <p class="tech-cost">
+                    <strong>Maliyeti:</strong> XXX Ahşap, XXX Altın
+                </p>
+            </div>
+        </section>
+
+        <!-- 5. TAKIM BONUSU -->
+        <section class="section-box">
+            <h3 class="section-title">🤝 Takım Bonusu</h3>
+            <div class="team-bonus">
+                <p class="team-bonus-text">
+                    Bu medeniyetin müttefiklerine sağladığı bonus burada yazılır.
+                    Örneğin: "Müttefiklerine <strong>Birim Adı</strong> %XX indirim sağlanır."
+                </p>
+            </div>
+        </section>
+
+    </div>
+</div>
+
+<!-- =====================================================
+     AÇIKLAMA VE NOTLAR
+     ===================================================== -->
+
+<!--
+NASIL KULLANIR:
+
+1. MEDENİYET ADI & EMOJİ:
+   - <h2 class="civ-title">MEDENİYET ADI</h2>
+   - <div class="civ-emblem">🏺</div> ← Emoji'yi değiştir
+   
+2. BONUSLAR & ZAYIFLIKLAR:
+   - Her madde <li class="bonus-item"> içinde
+   - 3-4 madde genellikle yeterli
+   
+3. ÖZEL BİRİM:
+   - <strong>BİRİM ADI</strong> içinde her yerde adını kur
+   - .stat-value içinde sayıları gir
+   
+4. ÖZEL TEKNOLOJİ:
+   - <h4 class="tech-name">TEKNOLOJİ ADI</h4>
+   - Maliyeti: Ahşap, Altın olarak gir
+   
+5. TAKIM BONUSU:
+   - Müttefiklere sağlanan avantajı yaz
+   
+6. HTML İÇERİSİNDE KULLAN:
+   - index.html dosyasının sonuna yapıştır
+   - Veya başka bir <div> yerine değiştir
+   
+7. TUŞU AYARLA (opsiyonel - script.js):
+   const keyMap = {
+       '1': 'turks',
+       '2': 'britons',
+       '3': 'mayans',
+       '4': 'persians'  ← YENİ MEDENIYET
+   };
+   
+AoE II HD EDITION VERİLERİ KONTROL:
+- https://ageofempires.fandom.com/wiki/Age_of_Empires_II
+- SADECE "HD Edition" seçeneğini kullan!
+- Definitive Edition (DE) değil!
+
+ÖRNEKLER (KOPYALAYABİLİRSİN):
+- Türkler, İngilizler, Mayalar bölümlerine bak
+- Aynı yapıyı kullan, verileri değiştir
+
+EMOJİ SEÇİMLERİ:
+- 🔫 Barut (Gunpowder)
+- 🏹 Okçuluk (Archery)
+- ⚔️ Dönerci Askerler (Infantry)
+- 🐴 Kavaleri (Cavalry)
+- 🗼 Kuşatma (Siege)
+- 🏺 Tarihsel/Mezo (Ancient)
+- 🛡️ Savunma (Defense)
+- 🌾 Ekonomi (Economy)
+- 💎 Teknoloji (Technology)
+- ⚡ Hız/Güç (Speed/Power)
+-->

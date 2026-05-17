@@ -1,0 +1,712 @@
+/* =====================================================
+   AGE OF EMPIRES II: HD EDITION - CIVILIZATIONS GUIDE
+   COMPREHENSIVE STYLING WITH HISTORICAL AESTHETICS
+   ===================================================== */
+
+/* =====================================================
+   1. CUSTOM PROPERTIES (ROOT VARIABLES)
+   ===================================================== */
+:root {
+    /* ★ RENK PALETİ - Tarihi & Altın Tonları */
+    --color-gold: #D4AF37;           /* Ana Altın Rengi */
+    --color-gold-light: #F0E68C;     /* Açık Altın */
+    --color-gold-dark: #B8860B;      /* Koyu Altın */
+    
+    --color-wine-red: #722F37;       /* Şarap Kırmızısı */
+    --color-royal-blue: #1E3A5F;     /* Kraliyet Mavisi */
+    --color-bronze: #8B7355;         /* Tunç */
+    
+    --color-dark: #0B0B0B;           /* Çok Koyu Siyah */
+    --color-dark-brown: #1A1410;     /* Koyu Kahve */
+    --color-light-text: #E8D7C3;     /* Açık Parşömen Yazısı */
+    
+    --color-success: #7CB342;        /* Yeşil (Bonuslar) */
+    --color-danger: #C62828;         /* Kırmızı (Zayıflıklar) */
+    
+    /* ★ TİPOGRAFİ */
+    --font-heading: 'Cinzel', 'Playfair Display', serif;
+    --font-body: 'Lora', 'Merriweather', serif;
+    
+    /* ★ BOYUTLAR & BOŞLUKLAR */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    
+    /* ★ ANIMASYON */
+    --transition-smooth: all 0.3s ease-in-out;
+    --transition-fast: all 0.15s ease-in;
+    
+    /* ★ BACKDROP BLUR & OPACITY */
+    --backdrop-blur: blur(5px);
+    --backdrop-dark: rgba(11, 11, 11, 0.75);
+    --backdrop-light: rgba(26, 20, 16, 0.6);
+}
+
+/* =====================================================
+   2. RESET & BASE STYLES
+   ===================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* Arkaplan: Wallpaper'ı doldur */
+    background-image: url('walpaper.png'); /* ← HAZIR: wallpaper.png dosyası mevcut */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+    /* Wallpaper olmadığında Fallback Gradient */
+    background-color: var(--color-dark);
+    background-blend-mode: overlay;
+    
+    /* Tipografi */
+    font-family: var(--font-body);
+    color: var(--color-light-text);
+    line-height: 1.6;
+    
+    /* Min Yükseklik & Aşırı Kaydırma */
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* =====================================================
+   3. HEADER BÖLÜMÜ
+   ===================================================== */
+.header {
+    position: relative;
+    padding: var(--spacing-xl) var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+    
+    /* Koyu, Yarı-Şeffaf Arka Plan */
+    background: var(--backdrop-dark);
+    backdrop-filter: var(--backdrop-blur);
+    border-bottom: 3px solid var(--color-gold);
+    
+    text-align: center;
+    animation: fadeInDown 0.8s ease-in-out;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-title {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--color-gold);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    margin-bottom: var(--spacing-sm);
+    letter-spacing: 2px;
+}
+
+.header-subtitle {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--color-gold-light);
+    font-weight: 400;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+    letter-spacing: 1px;
+}
+
+/* Animasyon: Başlık Aşağıdan Yukarı */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =====================================================
+   4. MAIN CONTAINER
+   ===================================================== */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-lg);
+}
+
+/* =====================================================
+   5. NAVİGASYON - MEDENİYETLER SEÇİMİ
+   ===================================================== */
+.civilizations-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--spacing-xl);
+    animation: fadeIn 0.8s ease-in-out 0.2s both;
+}
+
+.nav-wrapper {
+    display: flex;
+    gap: var(--spacing-sm);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.civ-btn {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-sm) var(--spacing-md);
+    
+    /* Stil */
+    background: var(--backdrop-light);
+    border: 2px solid var(--color-gold-dark);
+    color: var(--color-light-text);
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    
+    border-radius: 4px;
+}
+
+.civ-btn:hover {
+    transform: scale(1.05);
+    background: rgba(212, 175, 55, 0.2);
+    box-shadow: 0 0 15px var(--color-gold);
+}
+
+.civ-btn.active {
+    background: var(--color-gold);
+    color: var(--color-dark);
+    box-shadow: 0 0 20px var(--color-gold), inset 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.civ-icon {
+    font-size: 1.5rem;
+}
+
+.civ-name {
+    display: none;
+}
+
+@media (min-width: 600px) {
+    .civ-name {
+        display: inline;
+    }
+}
+
+/* Fade-In Animasyonu */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* =====================================================
+   6. CONTENT WRAPPER - İÇERİK ALANI
+   ===================================================== */
+.content-wrapper {
+    position: relative;
+}
+
+.civilization-card {
+    display: none;
+    animation: fadeInUp 0.6s ease-in-out;
+}
+
+.civilization-card.active {
+    display: block;
+}
+
+/* Fade-In-Up Animasyonu */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =====================================================
+   7. CİV HEADER - BAŞLIK BÖLÜMÜ
+   ===================================================== */
+.civ-header {
+    position: relative;
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+    
+    /* Arkaplan: Koyu & Yarı-Şeffaf */
+    background: var(--backdrop-dark);
+    backdrop-filter: var(--backdrop-blur);
+    border-left: 5px solid var(--color-gold);
+    border-radius: 4px;
+    
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.civ-header-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+}
+
+.civ-title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--color-gold);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+    letter-spacing: 1px;
+}
+
+.civ-emblem {
+    font-size: 3rem;
+    filter: drop-shadow(0 0 8px var(--color-gold));
+}
+
+.civ-focus {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    color: var(--color-gold-light);
+    font-weight: 400;
+    font-style: italic;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* =====================================================
+   8. CİV CONTENT - İÇERİK BÖLÜMLERİ
+   ===================================================== */
+.civ-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+/* =====================================================
+   9. SECTION BOX - BÖLÜM KUTULARı
+   ===================================================== */
+.section-box {
+    padding: var(--spacing-lg);
+    background: var(--backdrop-light);
+    backdrop-filter: var(--backdrop-blur);
+    border: 1px solid var(--color-gold-dark);
+    border-radius: 4px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    transition: var(--transition-smooth);
+}
+
+.section-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(212, 175, 55, 0.3);
+}
+
+.section-box.featured {
+    border: 2px solid var(--color-gold);
+    background: rgba(212, 175, 55, 0.08);
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-gold);
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 2px solid var(--color-gold-dark);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* =====================================================
+   10. BONUS LİST
+   ===================================================== */
+.bonus-list {
+    list-style: none;
+}
+
+.bonus-item {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+    padding: var(--spacing-sm);
+    background: rgba(124, 179, 66, 0.1);
+    border-left: 3px solid var(--color-success);
+    border-radius: 2px;
+    transition: var(--transition-smooth);
+}
+
+.bonus-item:hover {
+    background: rgba(124, 179, 66, 0.2);
+    transform: translateX(5px);
+}
+
+.bonus-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background: var(--color-success);
+    color: white;
+    border-radius: 50%;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.bonus-text {
+    flex-grow: 1;
+    color: var(--color-light-text);
+    line-height: 1.5;
+}
+
+.bonus-text strong {
+    color: var(--color-gold-light);
+}
+
+/* =====================================================
+   11. WEAKNESS LİST
+   ===================================================== */
+.weakness-list {
+    list-style: none;
+}
+
+.weakness-item {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+    padding: var(--spacing-sm);
+    background: rgba(198, 40, 40, 0.1);
+    border-left: 3px solid var(--color-danger);
+    border-radius: 2px;
+    transition: var(--transition-smooth);
+}
+
+.weakness-item:hover {
+    background: rgba(198, 40, 40, 0.15);
+    transform: translateX(5px);
+}
+
+.weakness-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background: var(--color-danger);
+    color: white;
+    border-radius: 50%;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.weakness-text {
+    flex-grow: 1;
+    color: var(--color-light-text);
+    line-height: 1.5;
+}
+
+.weakness-text strong {
+    color: var(--color-gold-light);
+}
+
+/* =====================================================
+   12. UNIQUE UNIT BÖLÜMÜ
+   ===================================================== */
+.unique-unit {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.unique-desc {
+    color: var(--color-light-text);
+    font-size: 1rem;
+    line-height: 1.7;
+    padding: var(--spacing-sm);
+    background: rgba(212, 175, 55, 0.05);
+    border-radius: 2px;
+}
+
+.unit-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: var(--spacing-sm);
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--spacing-md);
+    background: var(--backdrop-dark);
+    border: 1px solid var(--color-gold-dark);
+    border-radius: 4px;
+    transition: var(--transition-smooth);
+}
+
+.stat:hover {
+    background: rgba(212, 175, 55, 0.1);
+    box-shadow: 0 0 10px var(--color-gold);
+    transform: scale(1.02);
+}
+
+.stat-label {
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    color: var(--color-gold-dark);
+    text-transform: uppercase;
+    margin-bottom: var(--spacing-xs);
+}
+
+.stat-value {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-gold);
+}
+
+.unit-role {
+    color: var(--color-gold-light);
+    font-style: italic;
+    font-size: 0.95rem;
+    padding: var(--spacing-sm);
+    background: rgba(212, 175, 55, 0.05);
+    border-radius: 2px;
+}
+
+/* =====================================================
+   13. TECHNOLOJİ BÖLÜMÜ
+   ===================================================== */
+.tech-item {
+    padding: var(--spacing-md);
+    background: var(--backdrop-dark);
+    border: 1px solid var(--color-bronze);
+    border-radius: 4px;
+    transition: var(--transition-smooth);
+}
+
+.tech-item:hover {
+    box-shadow: 0 0 15px rgba(139, 115, 85, 0.4);
+    transform: translateY(-3px);
+}
+
+.tech-name {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color-gold);
+    margin-bottom: var(--spacing-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.tech-desc {
+    color: var(--color-light-text);
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.6;
+}
+
+.tech-cost {
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    color: var(--color-gold-light);
+    font-weight: 600;
+}
+
+/* =====================================================
+   14. TAKIM BONUSU
+   ===================================================== */
+.team-bonus {
+    padding: var(--spacing-md);
+    background: linear-gradient(135deg, rgba(30, 58, 95, 0.3) 0%, rgba(114, 47, 55, 0.3) 100%);
+    border: 2px solid var(--color-gold);
+    border-radius: 4px;
+    box-shadow: inset 0 0 10px rgba(212, 175, 55, 0.1);
+}
+
+.team-bonus-text {
+    font-size: 1.05rem;
+    color: var(--color-light-text);
+    line-height: 1.7;
+}
+
+.team-bonus-text strong {
+    color: var(--color-gold-light);
+    font-weight: 700;
+}
+
+/* =====================================================
+   15. FOOTER BÖLÜMÜ
+   ===================================================== */
+.footer {
+    margin-top: var(--spacing-xl);
+    padding: var(--spacing-lg);
+    background: var(--backdrop-dark);
+    backdrop-filter: var(--backdrop-blur);
+    border-top: 3px solid var(--color-gold);
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out 0.4s both;
+}
+
+.footer-text {
+    font-size: 0.95rem;
+    color: var(--color-light-text);
+    margin-bottom: var(--spacing-sm);
+}
+
+.footer-instruction {
+    font-size: 0.85rem;
+    color: var(--color-gold-light);
+    line-height: 1.6;
+}
+
+.footer-instruction code {
+    font-family: 'Courier New', monospace;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2px 6px;
+    border-radius: 2px;
+    color: var(--color-gold);
+}
+
+.footer-credit {
+    font-size: 0.8rem;
+    color: var(--color-gold-dark);
+    margin-top: var(--spacing-sm);
+    font-style: italic;
+    opacity: 0.85;
+}
+
+/* =====================================================
+   16. RESPONSIVE DESIGN
+   ===================================================== */
+@media (max-width: 768px) {
+    .header-title {
+        font-size: 2rem;
+    }
+    
+    .header-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .civ-title {
+        font-size: 1.8rem;
+    }
+    
+    .civ-emblem {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.1rem;
+    }
+    
+    .container {
+        padding: var(--spacing-md);
+    }
+    
+    .civ-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .unit-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .header-title {
+        font-size: 1.5rem;
+    }
+    
+    .header-subtitle {
+        font-size: 1rem;
+    }
+    
+    .civ-title {
+        font-size: 1.5rem;
+    }
+    
+    .civ-emblem {
+        font-size: 1.5rem;
+    }
+    
+    .nav-wrapper {
+        gap: var(--spacing-xs);
+    }
+    
+    .civ-btn {
+        padding: var(--spacing-xs) var(--spacing-sm);
+        font-size: 0.85rem;
+    }
+    
+    .unit-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-box {
+        padding: var(--spacing-md);
+    }
+}
+
+/* =====================================================
+   17. ADVANCED HOVER & GLOW EFFECTS
+   ===================================================== */
+
+/* Altın Parlama Efekti */
+@keyframes goldGlow {
+    0%, 100% {
+        box-shadow: 0 0 10px var(--color-gold),
+                    inset 0 0 10px rgba(212, 175, 55, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 20px var(--color-gold),
+                    inset 0 0 15px rgba(212, 175, 55, 0.4);
+    }
+}
+
+.section-box.featured:hover {
+    animation: goldGlow 0.6s ease-in-out infinite;
+}
+
+/* Smooth Transitions için Tüm Elementler */
+button, a, input, select, textarea {
+    transition: var(--transition-smooth);
+}
+
+/* =====================================================
+   18. SCROLLBAR STİLİ (Chromium Tarayıcılar İçin)
+   ===================================================== */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-dark-brown);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-gold-dark);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-gold);
+}
