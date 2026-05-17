@@ -324,5 +324,5 @@ Sorun, soru, veya önerileriniz için kod yorumlarını incele — her adım det
 
 ```
 "In Age of Empires, Your Civilization Defines Your Victory."
-— Geliştiriciler
+— Geliştiriciler : Efkaradam ve (:Haiku4.5:)
 ```
