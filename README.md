@@ -318,17 +318,6 @@ Renkleri istediğin tonlara değiştir!
 
 ---
 
-## ✅ Checklist: Yayınlamadan Önce
-
-- [ ] Wallpaper Ekledim ve Çalışıyor
-- [ ] Tüm Medeniyetlerin Verileri Doğru
-- [ ] Responsive Tasarım Mobil'de Kontrol Edildi
-- [ ] Tüm Linkler ve Düğmeler Çalışıyor
-- [ ] Yazı Tipleri Yüklenmiş ve Düzgün Görünüyor
-- [ ] Renk Paletini Hoşlandığım Şekilde Ayarladım
-
----
-
 **Keyif Al! 🎮 Age of Empires II: HD Edition Rehberine Hoş Geldiniz!**
 
 Sorun, soru, veya önerileriniz için kod yorumlarını incele — her adım detaylı açıklanmıştır.
